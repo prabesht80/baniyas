@@ -66,3 +66,56 @@ gallery.querySelectorAll('.gallery-item').forEach(function (item) {
 });
 
 
+// alert
+function validateForm() {
+
+    var name = document.getElementById("name").value;
+
+    var c_name = document.getElementById("c_name").value;
+
+    var email = document.getElementsByName("email");
+
+    var number = document.getElementsByName("number");
+
+    var query = document.getElementsByName("query");
+
+    if (name == "") {
+
+        alert('Please enter your Name');
+
+        return false;
+
+    }
+    if (c_name == "") {
+
+        alert('Please enter your company name');
+
+        return false;
+
+    }
+    if (email == "") {
+
+        alert('Please enter your email');
+
+        return false;
+
+    }
+    if (number == "") {
+
+        alert('Please enter your number');
+
+        return false;
+
+    }
+
+    else if (!(query[0].checked || query[1].checked || query[2].checked || query[3].checked)) {
+
+        alert("Please Select Atleast one of your query");
+
+        return false;
+
+    }
+
+    return true;
+
+}

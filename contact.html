@@ -35,8 +35,8 @@
         </div>
         <nav>
           <ul>
-            <li><a href="index.html">Overview</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="/">Overview</a></li>
+            <li><a href="gallery">Gallery</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -82,6 +82,7 @@
                     <p>example@gmail.com</p>
                     <h3>Bindabasini pvt ltd</h3>
                     <p>example@gmail.com</p>
+                    
                 </div>
             </div>
             </div>
@@ -103,7 +104,8 @@
             </div>
 
             <div class="contact_section1">
-                <form action="">
+                
+                <form action="/contact.html">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="">
                 
@@ -127,7 +129,7 @@
                     <label for="comment">Comment</label>
                     <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
                 
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" onclick="validateForm()">
                 </form>
             </div>
         </div>

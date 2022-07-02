@@ -646,7 +646,7 @@ font-family: 'Times New Roman', Times, serif;  }
   @media only screen and (max-width: 500px){
   
     .cards_container{
-      margin-top: 600px;
+      margin-top: 500px;
     } 
   }
     
@@ -727,33 +727,78 @@ font-family: 'Times New Roman', Times, serif;  }
    justify-content: space-between;
   }
   
+  .manager_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   
   
-  .ceo_section1, .ceo_section2{
-    width: 47%;
-    display:flex;
-  }
-  .split1, .split2{
+  .split1, .split2,.split3,.split4{
     width: 47%;
   }
-  .split1 h1, .split2 h2{
+ 
+  .split2 h1{
+    font-size: 55px;
+  }
+  .split2 h2{
+    font-size: 20px;
+  }
+
+
+  .split2 p{
     font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
   }
-  .split1 p, .split2 p{
-    font-size: 16px;
+  .split3 p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
   }
-  .split2 img{
-      margin-top: 40px;
+  @media only screen and (max-width: 900px){
+    .split2 h1{
+      font-size: 45px;
+    }
   }
-  
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 450px){
+    .split2 h1{
+      font-size: 35px;
+    }
+    .split2 h2{
+      font-size: 20px;
+    }
+  }
+  @media only screen and (max-width: 720px){
+    .split2 h1{
+      font-size: 25px;
+  }
+  .split3 h1{
+    font-size: 25px;
+}
+  }
+
+  @media only screen and (max-width: 600px){
     
     .ceo_Section {
       margin-top: 10px;
       display: flex;
       flex-direction: column;
     }
-    .ceo_section1, .ceo_section2{
+    .manager_section{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .split1 img{
+      width: 70%;
+      height: 30%;
+    }
+    .split1, .split2{
+      width: 98%;
+    }
+    .split3, .split4{
       width: 98%;
     }
 
